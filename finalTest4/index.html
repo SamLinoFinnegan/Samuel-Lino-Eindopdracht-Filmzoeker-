@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Data Base</title>
+    <script src="../finalTest4/assets/script/dataBase.js"></script>
+    <script defer src="../finalTest4/assets/script/script.js"></script>
+    <link rel="stylesheet" href="../finalTest4/assets/styles/styles.css">
+</head>
+<header class="main-header">
+    <h2>Winc Academy - Movie DataBase</h2>
+</header>
+
+<body>
+    <nav class="main-nav">
+        <ul>
+            <label>Batman Films <input id="radioBatman" type="radio" name="film-filter" value="Batman" /></label>
+            <label>Princess Films <input id="radioPrincess" type="radio" name="film-filter" value="Princess" /></label>
+            <label>X - men Films <input id="radioXmen" type="radio" name="film-filter" value="X-men" /></label>
+            <label>Avengers Film <input id="radioAvengers" type="radio" name="film-filter" value="Avengers" /></label>
+            <label>Latest Films - from 2014 <input id="radioLatest" type="radio" name="film-filter"
+                    value="latest" /></label>
+        </ul>
+        <section id="form">
+            <form name="search">
+                <p>
+                    <label><input id="link_id" type="search" name="search-filter" value="" /></label>
+                    <button id="link_str" name="search-filter" onclick="srchBar()">Search</button>
+                </p>
+
+            </form>
+        </section>
+    </nav>
+    <div id="contPosition">
+        <main class="container">
+            <ul id="parentUl">
+            </ul>
+
+        </main>
+
+    </div>
+
+</body>
+<footer id="footer">
+    <p id="p1">Copyright © 2021 by Sam L Finnegan </p>
+    <p id="p2">All rights reserved. No part of this publication may be reproduced, distributed,
+        or transmitted in any form
+        or by any means, including photocopying, recording, or other electronic or mechanical methods, without
+        the
+        prior written permission of the publisher, except in the case of brief quotations embodied in critical
+        reviews and certain other noncommercial uses permitted by copyright law. For permission requests, write
+        to
+        the publisher, addressed “Attention: Permissions Coordinator,” at the address below.
+    </p>
+    <p id="p3">Imaginary Place
+        <br>
+
+        1234 Yo mamas Avenue
+        <br>
+
+        La La Land, $% 94909
+        <br>
+
+        www.imaginaryplace.com
+        <br>
+
+    </p>
+    <p id="p4">
+        Ordering Information:
+        <br>
+
+        Quantity sales. Special discounts are available on quantity purchases by corporations, associations, and
+        others. For details, contact the publisher at the address above.
+        <br>
+
+        Orders by U.S. trade bookstores and wholesalers. Please contact Big Distribution: Tel: (800) 800-8000;
+        Fax:
+        (800) 800-8001 or visit www.bigbooks.com.
+    </p>
+    <p id="p5">Printed in the Land of Mordor</p>
+
+</footer>
+
+</html>
