@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film Data Base</title>
-    <script src="./scripts & styles/script/dataBase.js"></script>
-    <script defer src="./scripts & styles/script/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-N+TMVTYJmVuLYKj9X2B2Q2mDfZGxFJapdMFEiOt89yHzoF9CfjKicIY1wzbwZGxQuVEK+/fPQ2bK4/C6zQ2i9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./scripts & styles/styles/styles.css">
 </head>
 <header class="main-header">
@@ -16,11 +15,11 @@
 <body>
     <nav class="main-nav">
         <ul>
-            <label>Batman Films <input id="radioBatman" type="radio" name="film-filter" value="Batman" /></label>
-            <label>Princess Films <input id="radioPrincess" type="radio" name="film-filter" value="Princess" /></label>
-            <label>X - men Films <input id="radioXmen" type="radio" name="film-filter" value="X-men" /></label>
-            <label>Avengers Film <input id="radioAvengers" type="radio" name="film-filter" value="Avengers" /></label>
-            <label>Latest Films - from 2014 <input id="radioLatest" type="radio" name="film-filter"
+            <label>Batman <input id="radioBatman" type="radio" name="film-filter" value="Batman" /></label>
+            <label>Princess<input id="radioPrincess" type="radio" name="film-filter" value="Princess" /></label>
+            <label>X - men<input id="radioXmen" type="radio" name="film-filter" value="X-men" /></label>
+            <label>Avengers<input id="radioAvengers" type="radio" name="film-filter" value="Avengers" /></label>
+            <label>Latest<input id="radioLatest" type="radio" name="film-filter"
                     value="latest" /></label>
         </ul>
         <section id="form">
@@ -28,6 +27,43 @@
             <button id="srcBtn" name="search-filter">Search</button>
         </section>
     </nav>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="./scripts & styles/img/avatar.jpg" style="width:100%; height: 100%;">
+      <div class="text">Avatar</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="./scripts & styles/img/avengers.jpg" style="width:100%;height: 100%;">
+      <div class="text">Avengers</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="./scripts & styles/img/batman.jpg" style="width:100%;height: 100%;">
+      <div class="text">Batman</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="./scripts & styles/img/chickflic.jpg" style="width:100%;height: 100%;">
+        <div class="text">Love movies</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="./scripts & styles/img/xmen.jpg" style="width:100%;height: 100%;">
+        <div class="text">X - men</div>
+      </div>
+  
+  </div>
+  <br>
+  
     <div id="contPosition">
         <main class="container">
             <ul id="parentUl">
@@ -38,44 +74,47 @@
     </div>
 
 </body>
-<footer id="footer">
-    <p id="p1">Copyright © 2021 by Sam L Finnegan </p>
-    <p id="p2">All rights reserved. No part of this publication may be reproduced, distributed,
-        or transmitted in any form
-        or by any means, including photocopying, recording, or other electronic or mechanical methods, without
-        the
-        prior written permission of the publisher, except in the case of brief quotations embodied in critical
-        reviews and certain other noncommercial uses permitted by copyright law. For permission requests, write
-        to
-        the publisher, addressed “Attention: Permissions Coordinator,” at the address below.
-    </p>
-    <p id="p3">Imaginary Place
-        <br>
-
-        1234 Yo mamas Avenue
-        <br>
-
-        La La Land, $% 94909
-        <br>
-
-        www.imaginaryplace.com
-        <br>
-
-    </p>
-    <p id="p4">
-        Ordering Information:
-        <br>
-
-        Quantity sales. Special discounts are available on quantity purchases by corporations, associations, and
-        others. For details, contact the publisher at the address above.
-        <br>
-
-        Orders by U.S. trade bookstores and wholesalers. Please contact Big Distribution: Tel: (800) 800-8000;
-        Fax:
-        (800) 800-8001 or visit www.bigbooks.com.
-    </p>
-    <p id="p5">Printed in the Land of Mordor</p>
-
-</footer>
-
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>About Us</h3>
+          <p>This website was made as part of my Front-end developer course, for the moment it is only for demonstration purpose</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Services</h3>
+          <ul class="list-unstyled">
+            <li><a href="https://www.samuel-lino-finnegan-portfolio.com/">Check out my Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Contact Us</h3>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-map-marker"></i> Dublin</li>
+            <li><i class="fa fa-phone"></i> 089-959-8262</li>
+            <li><i class="fa fa-envelope"></i> samuel.a.lino@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Connect With Us</h3>
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/samuel.lino.3745/"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://linkedin.com/in/samuel-finnegan-b11944ab"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/SamLinoFinnegan"><i class="fa fa-github"></i> Github</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 My Company, Inc. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-right">
+          <p>Designed by <a href="#">Samuel L. Finnegan</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="./scripts & styles/script/dataBase.js"></script>
+<script defer src="./scripts & styles/script/script.js"></script>
 </html>

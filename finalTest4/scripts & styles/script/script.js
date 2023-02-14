@@ -1,4 +1,5 @@
 // ---------------------- variables --------------------- //
+const radioButtons = document.querySelectorAll('input[type="radio"]');
 
 const MovieList = document.getElementById('parentUl');
 
@@ -47,11 +48,13 @@ const addMoviesToDom = (array) => {
         }
     });
     movieObject.forEach((movie) => {
-        const newLi = document.createElement("img")
+        const newLi = document.createElement("li")
+        const newImg = document.createElement("img")
         const newA = document.createElement("a")
-        MovieList.appendChild(newA)
-        newA.appendChild(newLi)
-        newLi.src = movie.poster
+        MovieList.appendChild(newLi)
+        newA.appendChild(newImg)
+        newLi.appendChild(newA)
+        newImg.src = movie.poster
         newA.href = "https://www.imdb.com/title/" + movie.id
     });
 };
@@ -95,7 +98,32 @@ const srchBar = () => {
     };
 };
 
+// ---------------------- carousel ----------------------------- //
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
 // ---------------------- functionsCallers --------------------- //
+
+radioButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const parent = document.getElementById("parentUl")
+        parent.scrollIntoView({
+            behavior: 'smooth'
+          });
+    })
+})
 
 searchBtn.addEventListener("click", srchBar)
 
